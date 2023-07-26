@@ -12,8 +12,13 @@ class BookApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
-      home: SplashViewScreen(),
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.amber[100],
+        // brightness: Brightness.dark,
+      ),
+      home: const SplashViewScreen(),
     );
   }
 }
